@@ -1,0 +1,70 @@
+.carousel {
+    overflow: hidden;
+}
+
+.carousel .controls {
+    z-index: 0;
+    transition: all 1s ease-in .25s;
+}
+
+.carousel:hover .controls {
+    z-index: 1000;
+}
+
+.carousel .indicators .indicator {
+    width: 1px;
+    height: 20px;
+    border: 1px solid white;
+    transition: all .5s ease-in;
+    box-shadow: 1px 1px 1px #000;
+}
+
+.carousel .indicators .indicator.active {
+    height: 30px;
+}
+
+.carouselItem {
+    animation: fade-in 1s ease-in-out 0s;
+}
+
+.slide-in {
+    animation: slide-in 1s ease-in-out 0s;
+}
+
+.slide-left {
+    width: 100%;
+    animation: slide-left 1s ease-in-out 0s;
+}
+
+/*
+.carouselItem h1 {
+    text-shadow: 1px 1px 1px #000;
+}
+*/
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+@keyframes slide-in {
+    from {
+        margin-top: -1000px;
+      }
+      to {
+        margin-top: 0;
+      }
+}
+
+@keyframes slide-left {
+    from {
+      margin-left: 1000px;
+    }
+    to {
+      margin-left: 0;
+    }
+}
