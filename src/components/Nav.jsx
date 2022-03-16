@@ -4,7 +4,7 @@ import { FaTimes } from 'react-icons/fa';
 
 export const Brand = ({logo, title, url, className}) => {
   return (
-    <a href={url} title={title} className={` ${className}`}>
+    <a href={url} title={title} className={` ${className}`} style={{filter: 'grayscale(1)'}}>
       {logo && (<img src={logo} alt={title}/>)}
       {title && (
         <span>{title}</span>
@@ -38,7 +38,6 @@ export const NavItem = ({
 export const Nav = ({className, children}) => {
     const [menuOpen, setMenuOpen] = useState(false)
     const screenWidth = document.documentElement.clientWidth
-    console.log(screenWidth)
     return (
         <>
             <ul className={`list-none p-0 hidden md:flex`}>
@@ -57,7 +56,7 @@ export const Nav = ({className, children}) => {
             )}
             {!menuOpen && (
                 <HiMenu 
-                    className='cursor-pointer text-gray-200 hover:text-white md:hidden' 
+                    className='cursor-pointer text-black hover:text-gray-800 md:hidden' 
                     fontSize={'40px'} 
                     onClick={()=>{setMenuOpen(true)}}
                 />

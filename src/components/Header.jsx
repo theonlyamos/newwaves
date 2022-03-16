@@ -13,12 +13,12 @@ export const Header = ({})=>{
     return (
         <header className='relative flex justify-center gradient-bg-white'>
             <NavBar className={'absolute container px-5 sm:px-10 md:px-20 pt-7 flex justify-between items-center z-50'}>
-                <Brand logo={Logo} url='/' className={'rotate-90 z-10'}/>
+                <Brand logo={Logo} url='/' className={'rotate-90 z-10 filter-grayscale'}/>
                 <Nav className={'z-50 text-white'}>
-                    <NavItem url='/' title='Home' active={true} className="mt-5 text-black-500"/>
-                    <NavItem url='/' title='About' className="mt-5 text-black-500"/>
-                    <NavItem url='/' title='Services' className="mt-5 text-black-500"/>
-                    <NavItem url='/' title='Contact Us' className="mt-5 text-black-500"/>
+                    <NavItem url='/' title='Home' active={true} className="mt-5 text-black"/>
+                    <NavItem url='/' title='About' className="mt-5 text-black"/>
+                    <NavItem url='/' title='Services' className="mt-5 text-black"/>
+                    <NavItem url='/' title='Contact Us' className="mt-5 text-black"/>
                 </Nav>
             </NavBar>
             {/*
