@@ -21,12 +21,20 @@ export const Header = ({})=>{
                     <NavItem url='/' title='Contact Us' className="mt-5"/>
                 </Nav>
             </NavBar>
+            {/*
             <Carousel autoplay={true} animation='slide-left'>
                 <CarouselItem title="New Waves Technologies" animation='fade-in' key="0"/>
                 <CarouselItem img={Img1} title="Professsional Website Development" color="blue" animation='fade-in' key="1"/>
                 <CarouselItem img={Img3} title="Cloud Migration" color="red" animation='slide-in' key="2"/>
                 <CarouselItem img={Img4} title="Mobile Applications Development" color="black" animation='slide-left' key="3"/>
             </Carousel>
+            */}
+            <div className={`flex flex-col justify-center  min-h-screen w-full`}>
+                <h1 className={`text-5xl text-center font-extrabold text-gradient-red fade-in`}>
+                    New Waves Technologies
+                </h1>
+                <h3 className={`w-full text-3xl text-center italic text-gradient-yellow fade-in`}>Discovering limits</h3>
+            </div>
         </header>
     )
 }
