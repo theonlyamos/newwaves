@@ -11,14 +11,14 @@ import Img4 from '../../assets/images/photo-1643639779508-4c60952c058c.jpg';
 export const Header = ({})=>{
 
     return (
-        <header className='relative flex justify-center gradient-bg-welcome'>
+        <header className='relative flex justify-center gradient-bg-white'>
             <NavBar className={'absolute container px-5 sm:px-10 md:px-20 pt-7 flex justify-between items-center z-50'}>
                 <Brand logo={Logo} url='/' className={'rotate-90 z-10'}/>
                 <Nav className={'z-50 text-white'}>
-                    <NavItem url='/' title='Home' active={true} className="mt-5"/>
-                    <NavItem url='/' title='About' className="mt-5"/>
-                    <NavItem url='/' title='Services' className="mt-5"/>
-                    <NavItem url='/' title='Contact Us' className="mt-5"/>
+                    <NavItem url='/' title='Home' active={true} className="mt-5 text-black-500"/>
+                    <NavItem url='/' title='About' className="mt-5 text-black-500"/>
+                    <NavItem url='/' title='Services' className="mt-5 text-black-500"/>
+                    <NavItem url='/' title='Contact Us' className="mt-5 text-black-500"/>
                 </Nav>
             </NavBar>
             {/*
