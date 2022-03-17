@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
 
-* html {
+*, html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -14,11 +15,11 @@ body {
 }
 
 .gradient-bg-welcome {
-  background-color:#b95d28;
+  background-color:#e7e6e5;
   background-image: 
-    radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
-    radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%), 
-    radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);
+    radial-gradient(at 0% 0%, rgb(162, 158, 184) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, rgb(212, 220, 245) 0, transparent 50%), 
+    radial-gradient(at 100% 0%, rgb(212, 212, 212) 0, transparent 50%);
 }
 
 .gradient-bg-footer {
@@ -87,10 +88,6 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.filter-grascale {
-  filter: grayscale(1);
-}
-
 .eth-card {
   background-color:#a099ff;
   background-image: 
@@ -106,45 +103,56 @@ body {
 .text-gradient-white {
   background-color: #fff;
   background-image: radial-gradient(at 4% 36%, hsla(0,0%,100%,1) 0, transparent 53%), radial-gradient(at 100% 60%, rgb(0, 0, 0) 0, transparent 50%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-red {
   background-color: rgb(247, 3, 3);
   background-image: radial-gradient(at 4% 36%, hsla(0,0%,100%,1) 0, transparent 53%), radial-gradient(at 100% 60%, rgb(0, 0, 0) 0, transparent 50%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-yellow {
   background-color: rgba(247, 243, 3, 0.979);
   background-image: radial-gradient(at 4% 36%, hsla(0,0%,100%,1) 0, transparent 53%), radial-gradient(at 100% 60%, rgb(0, 0, 0) 0, transparent 50%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-green {
   background-color: rgba(23, 247, 3, 0.979);
   background-image: radial-gradient(at 4% 36%, hsla(0,0%,100%,1) 0, transparent 53%), radial-gradient(at 100% 60%, rgb(0, 0, 0) 0, transparent 50%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-blue {
   background-color: rgba(3, 40, 247, 0.979);
   background-image: radial-gradient(at 4% 36%, hsla(0,0%,100%,1) 0, transparent 53%), radial-gradient(at 100% 60%, rgb(0, 0, 0) 0, transparent 50%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-black {
   background-color: rgba(0, 0, 0, 0.979);
   background-image: radial-gradient(at 4% 36%, hsla(0,0%,100%,1) 0, transparent 53%), radial-gradient(at 100% 60%, rgb(0, 0, 0) 0, transparent 50%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+/* Utilities */
+.filter-grayscale {
+  filter: grayscale(1);
+}
+
+.letter-spacing-1 {
+  letter-spacing: 1px;
+}
+
+
+/* Tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
