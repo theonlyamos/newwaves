@@ -30,18 +30,21 @@ export const Header = ({})=>{
                 <CarouselItem img={Img4} title="Mobile Applications Development" color="black" animation='slide-left' key="3"/>
             </Carousel>
             */}
-            <div className={`w-full md:w-8/12 lg:w-7/12 px-5 text-center md:text-left flex flex-col justify-center min-h-screen`}>
+            <div className={`relative w-full md:w-8/12 lg:w-7/12 px-5 text-center md:text-left flex flex-col justify-center min-h-screen`}>
                 {/*<img src={Img4} className="absolute top-0 left-0 min-h-screen"/>*/}
-                <h1 className={`text-5xl fade-in z-50`} style={{lineHeight: '4rem'}}>
+                <h1 className={`text-5xl fade-in z-30`} style={{lineHeight: '4rem'}}>
                     New Waves Technologies
                 </h1>
-                <div className='mt-2 z-50 uppercase'>
-                    <h3 className={`text-md fade-in letter-spacing-1`}>Discovering limits, Eroding boundaries</h3>
+                <div className='mt-2 z-30 uppercase'>
+                    <h3 className={`text-md fade-in letter-spacing-1`}>Discovering limits, Eroding boundaries.</h3>
                 </div>
-                <a href="/" className="flex justify-center items-center mx-auto md:mx-0 px-7 py-3 animate-pulse hover:animate-none hover:shadow-lg text-md bg-blue-900 hover:bg-blue-800 mt-2 text-gray-300 hover:text-white uppercase w-fit">
+                <a href="/" className="flex justify-center items-center mx-auto md:mx-0 px-7 py-3 animate-pulse hover:animate-none hover:shadow-lg text-md bg-slate-900 hover:bg-slate-800 mt-2 text-gray-300 hover:text-white uppercase w-fit">
                     Learn More
                     <HiArrowRight className='ml-3'/>
                 </a>
+                <div className="absolute text-center text-4xl bottom-5 right-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 w-7 border-2 border-black rounded-2xl rotate-180 animate-pulse">
+                    .
+                </div>
             </div>
         </header>
     )

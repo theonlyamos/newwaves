@@ -5,7 +5,7 @@ import { HiChartPie, HiCloud, HiOutlineQuestionMarkCircle, HiShieldCheck } from 
 export const About = ({})=>{
     return (
         <section className='about w-full flex-col flex justify-center items-center gradient-bg-about' id='about'>
-            <div className="w-full py-20 lg:pb-0 bg-gray-100 mx-6 grid sm:grid-cols-2 md:grid-rows-2 lg:grid-cols-4">
+            <div className="w-full py-20 lg:pb-0 bg-gray-100 mx-6 grid sm:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 space-y-9">
                 <div className="flex flex-col justify-center items-center">
                     <HiShieldCheck className='text-blue-500 text-9xl'></HiShieldCheck>
                     <h3 className='text-bold text-gradient-blue text-4xl'>Security</h3>

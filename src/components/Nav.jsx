@@ -74,7 +74,7 @@ export const NavBar = ({className, children}) => {
   
   return (
     <NavContext.Provider value={{menuOpen, setMenuOpen}}>
-      <nav className={`justify-between z-50 text-white ${className} ${menuOpen ? 'min-h-screen' : ''}`}>
+      <nav className={`justify-between z-50 text-white ${className} ${menuOpen ? 'min-h-screen opacity-100' : ''}`}>
           {children}
       </nav>
     </NavContext.Provider>

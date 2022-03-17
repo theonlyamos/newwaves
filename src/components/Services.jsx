@@ -5,7 +5,7 @@ export const Services = ({})=>{
     return (
         <section className='services w-full flex flex-col justify-center' id='services'>
             <div className='py-20 w-full gradient-bg-services'>
-                <h1 className='text-center font-bold text-5xl text-gradient-yellow'>
+                <h1 className='text-center font-bold text-5xl text-gradient-yellow h-20'>
                     Our Services
                 </h1>
             </div>
