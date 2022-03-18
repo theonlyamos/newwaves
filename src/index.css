@@ -14,6 +14,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
+/* Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-sm, .text-md, .text-lg, .text-2xl, .text-3xl, .text-4xl, .text-5xl {
+  line-height: initial;
+}
+
 .gradient-bg-welcome {
   background-color:#e7e6e5;
   background-image: 
@@ -151,8 +162,3 @@ body {
   letter-spacing: 1px;
 }
 
-
-/* Tailwind */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
