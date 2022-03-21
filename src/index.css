@@ -9,12 +9,18 @@
 
 body {
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Raleway', "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.font-open-sans {
+  font-family: "Open Sans", sans-serif;
+}
 
+.font-raleway {
+  font-family: 'Raleway', Arial, 'Open Sans', sans-serif;
+}
 
 /* Tailwind */
 @tailwind base;

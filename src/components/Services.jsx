@@ -4,9 +4,9 @@ import * as React from 'react';
 export const Services = ({})=>{
     return (
         <section className='services w-full flex flex-col justify-center' id='services'>
-            <div className='py-20 w-full gradient-bg-services'>
-                <h1 className='text-center font-bold text-5xl text-gradient-yellow h-20'>
-                    Our Services
+            <div className='py-20 w-full'>
+                <h1 className='text-center text-4xl h-20'>
+                    Our <strong>Services</strong>
                 </h1>
             </div>
             <ul className="service-list w-full min-h-screen grid md:grid-cols-2 md:grid-rows-2 mx-auto">

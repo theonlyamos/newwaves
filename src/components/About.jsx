@@ -5,22 +5,21 @@ import { HiChartPie, HiCloud, HiOutlineQuestionMarkCircle, HiShieldCheck } from 
 export const About = ({})=>{
     return (
         <section className='about w-full flex-col flex justify-center items-center gradient-bg-about' id='about'>
-            <div className="w-full py-20 lg:pb-0 bg-gray-100 mx-6 grid sm:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 space-y-9">
-                <div className="flex flex-col justify-center items-center">
-                    <HiShieldCheck className='text-blue-500 text-9xl'></HiShieldCheck>
-                    <h3 className='text-bold text-gradient-blue text-4xl'>Security</h3>
+            <div className="w-full py-20 lg:pb-0 bg-gray-100 mx-6 grid sm:grid-cols-2 md:grid-rows-2 lg:grid-cols-3 space-y-9">
+                <div className="flex flex-col justify-center items-center mt-10 py-0">
+                    <HiShieldCheck className='text-gray-500 text-6xl'></HiShieldCheck>
+                    <h3 className='text-extrabold text-xl uppercase font-open-sans'>Security</h3>
+                    <p className="mt-3 px-3">We development your product with security in mind. Our developers make sure your website/mobile app is secure before put out there.</p>
                 </div>
                 <div className="flex flex-col justify-center items-center">
-                    <HiCloud className='text-green-500 text-9xl'></HiCloud>
-                    <h3 className='text-bold text-gradient-green text-4xl'>Availability</h3>
+                    <HiChartPie className='text-gray-500 text-6xl'></HiChartPie>
+                    <h3 className='text-extrabold text-xl uppercase font-open-sans'>Affordability</h3>
+                    <p className='mt-3 px-3'>{"We've got something for everyone. Our prices are so affordable that everyone can get something for whatever they have. No matter how little you have."}</p>
                 </div>
                 <div className="flex flex-col justify-center items-center">
-                    <HiChartPie className='text-gradient-black text-9xl'></HiChartPie>
-                    <h3 className='text-bold text-gradient-black text-4xl'>Affordability</h3>
-                </div>
-                <div className="flex flex-col justify-center items-center">
-                    <HiShieldCheck className='text-red-500 text-9xl'></HiShieldCheck>
-                    <h3 className='text-bold text-gradient-red text-4xl'>Security</h3>
+                    <HiCloud className='text-gray-500 text-6xl'></HiCloud>
+                    <h3 className='text-extrabold text-xl font-open-sans uppercase'>Availability</h3>
+                    <p className="mt-3 px-3">Our office is open 24/7 and always there to answer any questions you may have and help out anyway we can. {"Don't be shy to contact us."}</p>
                 </div>
             </div>
             {/*

@@ -38,7 +38,7 @@ export const Header = ({})=>{
                 <div className='mt-2 z-30 uppercase'>
                     <h3 className={`text-md fade-in letter-spacing-1`}>Discovering limits, Eroding boundaries.</h3>
                 </div>
-                <a href="/" className="flex justify-center items-center mx-auto md:mx-0 px-7 py-3 animate-pulse hover:animate-none hover:shadow-lg text-md bg-slate-900 hover:bg-slate-800 mt-2 text-gray-300 hover:text-white uppercase w-fit">
+                <a href="/" className="flex justify-center items-center mx-auto md:mx-0 px-7 py-3 hover:shadow-lg text-md bg-transparent hover:bg-black border-2 border-black mt-2 text-black hover:text-white uppercase w-fit rounded-lg">
                     Learn More
                     <HiArrowRight className='ml-3'/>
                 </a>
