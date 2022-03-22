@@ -164,6 +164,10 @@ body {
   filter: grayscale(1);
 }
 
+.filter-invert{
+  filter: invert(1);
+}
+
 .letter-spacing-1 {
   letter-spacing: 1px;
 }

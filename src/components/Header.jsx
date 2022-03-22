@@ -1,12 +1,13 @@
-import { Carousel, CarouselItem } from './Carousel';
+//import { Carousel, CarouselItem } from './Carousel';
 import { NavBar, Nav, NavItem, Brand } from './Nav';
 
-import Logo from '../../assets/icons/android/android-launchericon-96-96.png';
+import Logo from '../../assets/logo/LOGO ONLY BLACK1.png';
 
 import Img1 from '../../assets/images/photo-1642425146609-6c8ff4589d18.jpg';
 import Img2 from '../../assets/images/photo-1644329770639-1a20809b82a3.jpg';
 import Img3 from '../../assets/images/photo-1643101811638-c44424d967fb.jpg';
 import Img4 from '../../assets/images/photo-1643639779508-4c60952c058c.jpg';
+
 import { HiArrowRight } from 'react-icons/hi';
 
 export const Header = ({})=>{
@@ -14,7 +15,7 @@ export const Header = ({})=>{
     return (
         <header className='relative flex justify-center gradient-bg-welcome'>
             <NavBar className={'absolute w-full px-5 sm:px-10 md:px-20 flex justify-between items-center z-50 bg-white opacity-80'}>
-                <Brand logo={Logo} url='/' className={'rotate-90 z-10 filter-grayscale'}/>
+                <Brand logo={Logo} url='/' className={'z-10 filter-grayscale'} style={{maxWidth: '60px', height: 'auto'}}/>
                 <Nav className={'z-50 text-white'}>
                     <NavItem url='/' title='Home' active={true} className="mt-5 py-4 md:py-0 w-full md:w-fit hover:bg-gray-200 md:text-xs text-center uppercase text-black letter-spacing-1"/>
                     <NavItem url='/' title='Services' className="mt-5 py-4 md:py-0 w-full md:w-fit hover:bg-gray-200 md:text-xs text-center uppercase text-black letter-spacing-1"/>
