@@ -1,7 +1,7 @@
 import { Brand } from './Nav';
 import { FaFacebookSquare, FaGooglePlusSquare, FaInstagramSquare, FaTwitterSquare } from 'react-icons/fa';
 
-import Logo from '../../assets/logo/LOGO BLACK1.png';
+import Logo from '../../assets/logo/LOGO WHITE1.png';
 
 
 export const Footer = ({})=>{

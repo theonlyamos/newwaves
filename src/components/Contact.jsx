@@ -14,23 +14,23 @@ export const Contact = ({})=>{
                 <div className="w-full flex flex-col items-center mx-2">
                     <div className="w-96 flex flex-col items-center justify-center">
                         <div className="w-full flex justify-center">
-                            <FaBlenderPhone className='text-gray-600 text-8xl bg-red-200 p-3 rounded-t-md'></FaBlenderPhone>
+                            <FaBlenderPhone className='text-red-400 text-8xl bg-red-200 p-3 rounded-t-md'></FaBlenderPhone>
                         </div>
                         <div className="w-full flex flex-col items-center">
                             <div className="flex justify-center items-center mb-3 p-3 bg-red-200 mt-5 rounded-full">
-                                <a href='tel:+233557821030' className="p-3 bg-red-100 rounded-l-full rounded-r-full letter-spacing-1 text-2xl">(233) 557 821 030</a>
+                                <a href='tel:+233557821030' className="p-3 bg-red-100 rounded-l-full rounded-r-full letter-spacing-1 text-2xl text-red-700">(233) 557 821 030</a>
                                 <a href='tel:+233557821030' className="">
                                     <IoCallOutline className='text-gray-600 text-5xl p-3 rounded-full bg-red-100 hover:bg-red-300 hover:text-white'></IoCallOutline>
                                 </a>
                             </div>
                             <div className="flex justify-center items-center mb-3 p-3 bg-red-200 mt-5 rounded-full">
-                                <a href='tel:+233500918671' className="p-3 bg-red-100 rounded-l-full rounded-r-full letter-spacing-1 text-2xl">(233) 500 918 671</a>
+                                <a href='tel:+233500918671' className="p-3 bg-red-100 rounded-l-full rounded-r-full letter-spacing-1 text-2xl text-red-700">(233) 500 918 671</a>
                                 <a href='tel:+233500918671' className="">
                                     <IoCallOutline className='text-gray-600 text-5xl p-3 rounded-full bg-red-100 hover:bg-red-300 hover:text-white'></IoCallOutline>
                                 </a>
                             </div>
                             <div className="flex justify-center items-center mb-3 p-3 bg-red-200 mt-5 rounded-full">
-                                <a href='mailto:info@newwaves.tech' className="p-3 bg-red-100 rounded-l-full rounded-r-full letter-spacing-1 text-2xl">info@newwaves.tech</a>
+                                <a href='mailto:info@newwaves.tech' className="p-3 bg-red-100 rounded-l-full rounded-r-full letter-spacing-1 text-2xl text-red-700">info@newwaves.tech</a>
                                 <a href='mailto:info@newwaves.tech' className="">
                                     <IoAtOutline className='text-gray-600 text-5xl p-3 rounded-full bg-red-100 hover:bg-red-300 hover:text-white'></IoAtOutline>
                                 </a>

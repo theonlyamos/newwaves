@@ -2,6 +2,7 @@
 import { NavBar, Nav, NavItem, Brand } from './Nav';
 
 import Logo from '../../assets/logo/LOGO ONLY BLACK1.png';
+import Logo1 from '../../assets/logo/LOGO WHITE1.png';
 
 import Img1 from '../../assets/images/photo-1642425146609-6c8ff4589d18.jpg';
 import Img2 from '../../assets/images/photo-1644329770639-1a20809b82a3.jpg';
@@ -31,18 +32,23 @@ export const Header = ({})=>{
                 <CarouselItem img={Img4} title="Mobile Applications Development" color="black" animation='slide-left' key="3"/>
             </Carousel>
             */}
-            <div className={`relative w-full md:w-8/12 lg:w-7/12 px-5 text-center md:text-left flex flex-col justify-center min-h-screen`}>
+            <div className={`relative w-full md:w-11/12 lg:w-10/12 px-5 text-center md:text-left flex flex-col justify-center min-h-screen`}>
                 {/*<img src={Img4} className="absolute top-0 left-0 min-h-screen"/>*/}
-                <h1 className={`text-5xl fade-in z-30`} style={{lineHeight: '4rem'}}>
-                    New Waves Technologies
-                </h1>
-                <div className='mt-2 z-30 uppercase'>
-                    <h3 className={`text-md fade-in letter-spacing-1`}>Reach New Frontiers.</h3>
+                <div className="flex flex-col-reverse md:flex-row justify-center items-center">
+                    <div className="flex flex-col">
+                        <h1 className={`text-gradient-red text-5xl fade-in z-30`} style={{lineHeight: '4rem'}}>
+                            Bring Your Ideas to Life
+                        </h1>
+                        <div className='mt-2 z-30 uppercase'>
+                            <h3 className={`text-green-600 text-2xl fade-in letter-spacing-1 animate-pulse`}>Realise Your Vision.</h3>
+                        </div>
+                        <a href="/" className="flex justify-center items-center animate-pulse mx-auto md:mx-0 px-7 py-3 hover:shadow-lg text-md bg-transparent hover:bg-black border-2 border-black mt-2 text-black hover:text-white uppercase w-fit rounded-lg">
+                            Learn More
+                            <HiArrowRight className='ml-3'/>
+                        </a>
+                    </div>
+                    <Brand logo={Logo1} url='/' className={'w-8/12 sm:w-5/12 md:w-6/12 lg:w-5/12'} style={{height: 'auto'}}/>
                 </div>
-                <a href="/" className="flex justify-center items-center mx-auto md:mx-0 px-7 py-3 hover:shadow-lg text-md bg-transparent hover:bg-black border-2 border-black mt-2 text-black hover:text-white uppercase w-fit rounded-lg">
-                    Learn More
-                    <HiArrowRight className='ml-3'/>
-                </a>
                 <div className="absolute text-center text-4xl bottom-5 right-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 w-7 border-2 border-black rounded-2xl rotate-180 animate-pulse">
                     .
                 </div>
