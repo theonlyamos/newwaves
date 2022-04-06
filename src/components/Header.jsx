@@ -19,8 +19,8 @@ export const Header = ({})=>{
                 <Brand logo={Logo} url='/' width={1923} height={1923}  alt="Logo" className={'z-10 filter-grayscale'} style={{maxWidth: '60px', height: 'auto'}}/>
                 <Nav className={'z-50 text-white'}>
                     <NavItem url='/' title='Home' active={true} className="mt-5 py-4 md:py-0 w-full md:w-fit hover:bg-gray-200 md:text-xs text-center uppercase text-black letter-spacing-1"/>
+                    <NavItem url='#about' title='About Us' className="mt-5 py-4 md:py-0 w-full md:w-fit hover:bg-gray-200 md:text-xs text-center uppercase text-black letter-spacing-1"/>
                     <NavItem url='#services' title='Services' className="mt-5 py-4 md:py-0 w-full md:w-fit hover:bg-gray-200 md:text-xs text-center uppercase text-black letter-spacing-1"/>
-                    <NavItem url='/' title='Portfolio' className="mt-5 py-4 md:py-0 w-full md:w-fit hover:bg-gray-200 md:text-xs text-center uppercase text-black letter-spacing-1"/>
                     <NavItem url='#contact' title='Contact Us' className="mt-5 py-4 md:py-0 w-full md:w-fit hover:bg-gray-200 md:text-xs text-center uppercase text-black letter-spacing-1"/>
                 </Nav>
             </NavBar>

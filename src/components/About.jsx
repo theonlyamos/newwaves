@@ -7,7 +7,7 @@ export const About = ({})=>{
                 <h1 className='text-center text-4xl'>
                     About <strong>Us</strong>
                 </h1>
-                <p className="mt-5 px-3 font-open-sans text-lg letter-spacing-1" style={{lineHeight: '1.5rem'}}>
+                <p className="mt-5 px-3 text-lg letter-spacing-1" style={{lineHeight: '1.5rem'}}>
                     <strong>New Waves Technologies</strong> is a software development company specializing in websites and android
 applications development. Our mission is to make the development of software
 simple, fast and affordable in Africa.
