@@ -43,19 +43,19 @@ export const Contact = ({})=>{
                     <FaEnvelopeOpenText className='text-gray-600 text-8xl bg-slate-200 p-3 rounded-t-md'></FaEnvelopeOpenText>
                     <form action="" className='w-96 rounded-md bg-slate-200 p-3'>
                         <div className="flex flex-col mb-3 p-3 bg-slate-100">
-                            <label for="name">
+                            <label htmlFor="name">
                                 Name
                             </label>
                             <input type="text" name='name' className='p-3 text-sm letter-spacing-1 focus:outline-none focus:invalid:border focus:invalid:border-red-400' required/>
                         </div>
                         <div className="flex flex-col mb-3 p-3 bg-slate-100">
-                            <label for="email">
+                            <label htmlFor="email">
                                 Email Address
                             </label>
                             <input type="email" name='email' className='p-3 text-sm letter-spacing-1 focus:outline-none focus:invalid:border focus:invalid:border-red-400' required/>
                         </div>
                         <div className="flex flex-col mb-3 p-3 bg-slate-100">
-                            <label for="message">
+                            <label htmlFor="message">
                                 Message
                             </label>
                             <textarea name='email' className='p-3 text-sm letter-spacing-1 focus:outline-none focus:invalid:border focus:invalid:border-red-400' minLength={30} required></textarea>

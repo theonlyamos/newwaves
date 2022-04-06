@@ -9,7 +9,7 @@ export const Footer = ({})=>{
     return (
         <footer className='footer pt-5 w-full gradient-bg-footer' id='footer'>
             <div className='w-full px-5 sm:px-10 md:px-20 flex justify-between items-center'>
-                <Brand logo={Logo} url='/' className={'z-10 filter-invert'} style={{maxWidth: '100px', height: 'auto'}}/>
+                <Brand logo={Logo} width={1923} height={1923}  alt="Logo"  url='/' className={'z-10 filter-invert'} style={{maxWidth: '100px', height: 'auto'}}/>
                 <div className="flex space-x-4">
                     <a href="/">
                         <FaFacebookSquare className='text-white' fontSize={'2.5rem'}/>

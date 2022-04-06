@@ -8,10 +8,10 @@ const NavContext = createContext({
     setMenuOpen: ()=>{}
 });
 
-export const Brand = ({logo, title, url, className, style={}}) => {
+export const Brand = ({logo, title, url, alt, width, height, className, style={}}) => {
   return (
     <a href={url} title={title} className={` ${className}`} style={{...style}}>
-      {logo && (<img src={logo} alt={title}/>)}
+      {logo && (<img src={logo} loading="lazy" width={width} height={height} alt={alt ? alt : title}/>)}
       {title && (
         <span>{title}</span>
       )}

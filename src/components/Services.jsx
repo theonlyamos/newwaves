@@ -1,33 +1,99 @@
-import * as React from 'react';
 import { IoCloudDoneOutline, IoCodeSlashOutline } from 'react-icons/io5';
 
-import Img4 from '../../assets/images/photo-1643639779508-4c60952c058c.jpg';
+import MobAppDevBGImg from '../../assets/images/photo-1643639779508-4c60952c058c.jpg';
+import WebDevBGImg from '../../assets/images/ferenc-almasi-eYpcLDXHVb0-unsplash.jpg'
+import SocialMediaBGImg from '../../assets/images/merakist-CNbRsQj8mHQ-unsplash.jpg'
+import GraphicDesBGImg from '../../assets/images/emily-bernal-v9vII5gV8Lw-unsplash.jpg'
+import CloudComputingBGImg from '../../assets/images/cloudcomputing.jpg'
 
 export const Services = ({})=>{
     return (
-        <section className='services w-full flex flex-col justify-center' id='services'>
+        <section className='services w-full flex flex-col' id='services'>
             <div className='py-20 w-full'>
                 <h1 className='text-center text-4xl'>
                     Our <strong>Services</strong>
                 </h1>
             </div>
-            <ul className="service-list w-full min-h-screen grid md:grid-cols-2 md:grid-rows-2 mx-auto">
-                <li className='relative w-full h-full mb-5 py-7 bg-gray-100 flex flex-col items-center rounded-none'>
-                    <IoCodeSlashOutline className='text-7xl text-gray-600'></IoCodeSlashOutline>
-                    <h1 className='text-2xl uppercase text-gray-700 px-10 text-center'><strong>Website Design &amp; Development</strong></h1>
-                    <p className="mt-4 px-3">Renowned for being the best of the best web design companies in Ghana, our web designers and web developers are privileged to work with some of the best brands and companies in Ghana. From startup companies to award-winning clients, our website design company helps businesses with professional  & responsive websites designed with usability and performance in mind, guaranteed to affect the bottom line. We convert visitors into leads and customers by building your business website with proven standards and technologies.
-                    </p>
+            <ul className="service-list w-full grid md:grid-cols-2">
+                <li className='relative px-10 w-full h-full bg-gray-100 flex flex-col rounded-none space-y-6' style={{minHeight: '50vh'}}>
+                    <h3 className='mt-9 uppercase text-2xl letter-spacing-1 font-open-sans'><strong>WEB SERVICES</strong></h3>
+                    <ul>
+                        <li className="list-inside list-disc text-lg letter-spacing-1">Website Design</li>
+                    </ul>
+                    <ul>
+                        <li className="list-inside list-disc text-lg letter-spacing-1">Web Development</li>
+                    </ul>
+                    <ul>
+                        <li className="list-inside list-disc text-lg letter-spacing-1">UX/UI Design</li>
+                    </ul>
+                    <ul>
+                        <li className="list-inside list-disc text-lg letter-spacing-1">Ecommerce</li>
+                    </ul>
                 </li>
-                <li className='relative w-full h-full mb-5 bg-yellow-200 flex justify-center items-center rounded-none'>
-                    <img src={Img4} alt="Image Holder" className='absolute top-0 left-0 min-h-full object-cover opacity-50'/>
-                    <h1 className='text-gradient-black text-4xl px-10 text-center z-10'>Mobile App <br/>Development</h1>
+                <li className='relative w-full bg-yellow-200 flex justify-center items-center rounded-none' style={{backgroundImage: `url(${WebDevBGImg})`, backgroundSize: 'cover', minHeight: '50vh'}}>
+                    <div className="w-full h-full backdrop-blur-sm backdrop-brightness-50 flex items-center justify-center">
+                        <h1 className='text-gradient-white font-bold text-4xl px-10 text-center z-10'>Website Design <br/>&amp;<br/>Development</h1>
+                    </div> 
                 </li>
-                <li className='relative w-full h-full mb-5 bg-green-200 flex flex-col justify-center items-center rounded-none'>
-                    <IoCloudDoneOutline className='text-7xl text-gray-600'></IoCloudDoneOutline>
-                    <h1 className='text-gradient-blue text-4xl px-10 text-center'>Cloud Migration <br/>&amp; <br/>Management</h1>
+                <li className='relative w-full h-full flex justify-center items-center rounded-none' style={{backgroundImage: `url(${MobAppDevBGImg})`, backgroundSize: 'cover', minHeight: '50vh'}}>
+                    <div className="w-full h-full backdrop-blur-sm backdrop-brightness-50 flex items-center justify-center">
+                        <h1 className='text-gradient-blue font-bold text-4xl px-10 text-center z-10'>Mobile App <br/>Development</h1>
+                    </div> 
                 </li>
-                <li className='w-full h-full mb-5 bg-slate-200 flex justify-center items-center rounded-none'>
-                    <h1 className='text-gradient-green text-4xl px-10 text-center'>Hardware <br/>&amp; <br/>Networking</h1>
+                <li className='relative px-10 w-full bg-blue-100 flex flex-col rounded-none space-y-6' style={{minHeight: '50vh'}}>
+                    <h3 className='mt-9 uppercase text-2xl letter-spacing-1 font-open-sans'><strong>Mobile Applications</strong></h3>
+                    <ul>
+                        <li className="list-inside list-disc text-lg letter-spacing-1">App Design</li>
+                    </ul>
+                    <ul>
+                        <li className="list-inside list-disc text-lg letter-spacing-1">App Development</li>
+                    </ul>
+                    <ul>
+                        <li className="list-inside list-disc text-lg letter-spacing-1">UX/UI Design</li>
+                    </ul>
+                    <ul>
+                        <li className="list-inside list-disc text-lg letter-spacing-1">App Store Publishing</li>
+                    </ul>
+                </li>
+                <li className='relative px-10 w-full h-full bg-red-100 flex flex-col rounded-none space-y-6' style={{minHeight: '50vh'}}>
+                    <h3 className='mt-9 uppercase text-2xl letter-spacing-1 font-open-sans'><strong>Cloud Services</strong></h3>
+                    <ul>
+                        <li className="list-inside list-disc text-lg letter-spacing-1">Cloud Migration</li>
+                    </ul>
+                    <ul>
+                        <li className="list-inside list-disc text-lg letter-spacing-1">Cloud Engineering</li>
+                    </ul>
+                    <ul>
+                        <li className="list-inside list-disc text-lg letter-spacing-1">Cloud Services Development</li>
+                    </ul>
+                    <ul>
+                        <li className="list-inside list-disc text-lg letter-spacing-1">VPS &amp; VPN Management</li>
+                    </ul>
+                </li>
+                <li className='relative w-full h-full flex justify-center items-center rounded-none' style={{backgroundImage: `url(${CloudComputingBGImg})`, backgroundSize: 'cover', minHeight: '50vh'}}>
+                    <div className="w-full h-full backdrop-blur-sm backdrop-brightness-50 flex items-center justify-center">
+                        <h1 className='text-gradient-red font-bold text-4xl px-10 text-center z-10'>Cloud Migration <br/>&amp;<br/>Management</h1>
+                    </div> 
+                </li>
+                <li className='relative w-full h-full flex justify-center items-center rounded-none' style={{backgroundImage: `url(${SocialMediaBGImg})`, backgroundSize: 'cover', minHeight: '50vh'}}>
+                    <div className="w-full h-full backdrop-blur-sm backdrop-brightness-50 flex items-center justify-center">
+                        <h1 className='text-gradient-yellow font-bold text-4xl px-10 text-center z-10'>Social Media <br/>&amp;<br/>Digital Assets Mgt.</h1>
+                    </div> 
+                </li>
+                <li className='relative px-10 w-full h-full bg-yellow-100 flex flex-col rounded-none space-y-6' style={{minHeight: '50vh'}}>
+                    <h3 className='mt-9 uppercase text-2xl letter-spacing-1 font-open-sans'><strong>Social Media Services</strong></h3>
+                    <ul>
+                        <li className="list-inside list-disc text-lg letter-spacing-1">Social Media Management</li>
+                    </ul>
+                    <ul>
+                        <li className="list-inside list-disc text-lg letter-spacing-1">Social Media Marketing</li>
+                    </ul>
+                    <ul>
+                        <li className="list-inside list-disc text-lg letter-spacing-1">Online Campaigns</li>
+                    </ul>
+                    <ul>
+                        <li className="list-inside list-disc text-lg letter-spacing-1">Social Media Ads</li>
+                    </ul>
                 </li>
             </ul>
         </section>

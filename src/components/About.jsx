@@ -1,25 +1,36 @@
-import * as React from 'react';
 import { IoShieldCheckmarkOutline, IoPieChartOutline, IoCloudOfflineOutline } from 'react-icons/io5';
 
 export const About = ({})=>{
     return (
-        <section className='w-full flex justify-center items-center bg-gray-100' id='about'>
-            <div className="w-full lg:w-9/12 py-20 grid md:grid-cols-2 lg:grid-cols-3 space-y-5">
+        <section className='w-full bg-gray-100' id='about'>
+            <div className='pt-20 w-full lg:w-9/12 mx-auto'>
+                <h1 className='text-center text-4xl'>
+                    About <strong>Us</strong>
+                </h1>
+                <p className="mt-5 px-3 font-open-sans text-lg letter-spacing-1" style={{lineHeight: '1.5rem'}}>
+                    <strong>New Waves Technologies</strong> is a software development company specializing in websites and android
+applications development. Our mission is to make the development of software
+simple, fast and affordable in Africa.
+                    </p>
+            </div>
+            <div className="pt-10 w-full lg:w-9/12 pb-20 mx-auto grid md:grid-cols-2 space-y-5">
                 <div className="flex flex-col justify-center items-center py-0">
                     <IoShieldCheckmarkOutline className='text-gray-500 text-6xl'></IoShieldCheckmarkOutline>
                     <h3 className='text-extrabold text-xl uppercase font-open-sans'>Security</h3>
-                    <p className="mt-5 px-3">We develop your product with security in mind. Our developers follow all security guidelines to ensure your website/mobile app is secure before being published. <strong>Your security is our top priority.</strong>
+                    <p className="mt-5 px-3">
+                    <strong>Your security is our top priority.</strong> Our developers develop your application with security in mind; ensuring your website/mobile app is secure before being published. 
                     </p>
                 </div>
                 <div className="flex flex-col justify-center items-center">
                     <IoPieChartOutline className='text-gray-500 text-6xl'></IoPieChartOutline>
                     <h3 className='text-extrabold text-xl uppercase font-open-sans'>Affordability</h3>
-                    <p className='mt-5 px-3'>{"We've got something for everyone. Our prices are so affordable that everyone can get something for whatever they have. No matter how little you have."}</p>
+                    <p className='mt-5 px-3'>
+                        <strong>We've got something for everyone</strong>. Our prices are so affordable that everyone can get something for whatever they have. No matter how little you have.</p>
                 </div>
                 <div className="flex flex-col justify-center items-center">
                     <IoCloudOfflineOutline className='text-gray-500 text-6xl'></IoCloudOfflineOutline>
                     <h3 className='text-extrabold text-xl font-open-sans uppercase'>Availability</h3>
-                    <p className="mt-5 px-3">Our office is open 24/7 and always there to answer any questions you may have and help out anyway we can. {"Don't be shy to contact us."}</p>
+                    <p className="mt-5 px-3"><strong>Our office is open 24/7</strong> and always there to answer any questions you may have and help out anyway we can. {"Don't be shy to contact us."}</p>
                 </div>
             </div>
             {/*
